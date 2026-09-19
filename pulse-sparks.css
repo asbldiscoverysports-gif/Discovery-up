@@ -1,0 +1,102 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero .pulse {
+  animation: none !important;
+  transform: none !important;
+  filter: drop-shadow(0 8px 8px rgba(22, 59, 89, .12));
+}
+
+.hero::before,
+.hero::after {
+  display: none !important;
+  animation: none !important;
+}
+
+.pulse-sparks {
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.pulse-spark {
+  --distance: 62px;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--teal);
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(0) scale(.2);
+  animation: pulse-spark-out .82s cubic-bezier(.16, .85, .3, 1) var(--delay) forwards;
+}
+
+.pulse-spark:nth-child(3n + 2) { background: var(--coral); }
+.pulse-spark:nth-child(3n) { background: var(--yellow); }
+.pulse-spark:nth-child(4n) {
+  width: 6px;
+  height: 17px;
+  border-radius: 99px;
+}
+.pulse-spark:nth-child(5n) {
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  clip-path: polygon(50% 0, 61% 36%, 100% 50%, 61% 64%, 50% 100%, 39% 64%, 0 50%, 39% 36%);
+}
+
+.pulse-sparks.major::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 214, 117, .7), rgba(85, 206, 197, .18) 48%, transparent 72%);
+  opacity: 0;
+  animation: pulse-halo-flash 1.05s ease-out forwards;
+}
+
+.pulse-sparks.major .pulse-spark {
+  --distance: 78px;
+  width: 11px;
+  height: 11px;
+  animation-duration: 1.05s;
+}
+
+@keyframes pulse-spark-out {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateY(0) scale(.2);
+  }
+  22% { opacity: 1; }
+  72% { opacity: .95; }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateY(calc(var(--distance) * -1)) scale(1.05);
+  }
+}
+
+@keyframes pulse-halo-flash {
+  0% { opacity: 0; transform: scale(.55); }
+  38% { opacity: 1; transform: scale(1.08); }
+  100% { opacity: 0; transform: scale(1.25); }
+}
+
+@media (max-width: 520px) {
+  .pulse-sparks { width: 118px; height: 118px; }
+  .pulse-spark { --distance: 50px; }
+  .pulse-sparks.major .pulse-spark { --distance: 63px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-sparks { display: none !important; }
+}
