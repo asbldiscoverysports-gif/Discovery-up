@@ -1,0 +1,29 @@
+/* La carte ne bouge plus : seule l'expression de Pulse change d'image. */
+.hero .pulse {
+  animation: none !important;
+  transform: none !important;
+  transform-origin: center;
+  transition: opacity .1s ease, filter .18s ease;
+  filter: drop-shadow(0 8px 8px rgba(22, 59, 89, .13));
+}
+
+.hero::before,
+.hero::after {
+  display: none !important;
+  animation: none !important;
+}
+
+.hero .pulse.pulse-frame-change {
+  opacity: .86;
+}
+
+.hero .pulse.reward {
+  animation: none !important;
+  transform: none !important;
+  filter: drop-shadow(0 8px 8px rgba(22, 59, 89, .13))
+          drop-shadow(0 0 14px rgba(255, 214, 117, .9));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .pulse { transition: none !important; }
+}
