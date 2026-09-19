@@ -6,7 +6,7 @@
 .hero .pulse {
   animation: none !important;
   transform: none !important;
-  filter: drop-shadow(0 8px 8px rgba(22, 59, 89, .12));
+  filter: none !important;
 }
 
 .hero::before,
@@ -99,4 +99,24 @@
 
 @media (prefers-reduced-motion: reduce) {
   .pulse-sparks { display: none !important; }
+}
+
+/* Le sélecteur de fichier conserve exactement l'apparence des autres boutons. */
+.settings-tools .restore-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 46px;
+  margin: 8px 0 0;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
 }

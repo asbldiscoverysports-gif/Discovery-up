@@ -1,4 +1,4 @@
-const CACHE = "discovery-up-v12-etincelles";
+const CACHE = "discovery-up-v13-visuel-corrige";
 const NANO=["balance","burpee","carry","crunch","hops","jumping","knees","lunges","plank-high","plank","pushup","rowing","squat","stairs","walk","wall"].map(name=>`./assets/nano/${name}.webp`);
 const CORE = ["./","./index.html","./styles.css","./animations.css","./pulse-sparks.css","./progression.css","./app.js","./pulse-sparks.js","./manifest.webmanifest","./logo-discovery-up.svg","./icon-192.png","./icon-512.png","./assets/discovery-sports.webp","./assets/rewards/bag-closed.webp","./assets/rewards/bag-ready.webp","./assets/rewards/sports-drink.webp","./assets/pulse/recovery.webp",...NANO,...Array.from({length:12},(_,i)=>`./assets/pulse/level-${String(i+1).padStart(2,"0")}.webp`)];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));self.skipWaiting()});
