@@ -1,4 +1,4 @@
-const CACHE="discovery-up-premium-v16";
+const CACHE="discovery-up-premium-v16-1";
 const NANO=["balance","burpee","carry","crunch","hops","jumping","knees","lunges","plank-high","plank","pushup","rowing","squat","stairs","walk","wall"].map(name=>`./assets/nano/${name}.webp`);
 const COLLECTION=["brassard","casquette","chaussures","chronometre","corde","elastique","lacets","medaille","serviette","tapis"].map(name=>`./assets/collection/${name}.webp`);
 const CORE=["./","./index.html","./styles.css","./animations.css","./pulse-sparks.css","./personal-goal.css","./progression.css","./premium.css","./app.js","./pulse-sparks.js","./manifest.webmanifest","./logo-discovery-up.svg","./icon-192.png","./icon-512.png","./assets/discovery-sports.webp","./assets/rewards/bag-closed.webp","./assets/rewards/bag-ready.webp","./assets/rewards/sports-drink.webp","./assets/pulse/recovery.webp",...NANO,...COLLECTION,...Array.from({length:12},(_,i)=>`./assets/pulse/level-${String(i+1).padStart(2,"0")}.webp`)];
