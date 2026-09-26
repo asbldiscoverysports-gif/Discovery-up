@@ -1,0 +1,16 @@
+DISCOVERY UP PREMIUM V17
+
+Contenu du ZIP : fichiers de l’application à placer directement à la racine du dépôt GitHub Pages.
+
+Nouveautés :
+- Sac prêt avec une Boisson du sportif déjà disponible : ouverture unique et 5 XP de compensation.
+- La boisson existante reste dans l’inventaire. Aucun mouvement ni pilier n’est validé par ces XP.
+- Animation dédiée au franchissement d’un niveau ; elle respecte les réglages des sons et vibrations.
+- Trois piliers avec un choix prédéfini configurable dans les réglages : cinq options par pilier.
+- Les objectifs anciens restent sélectionnables s’ils sont déjà enregistrés.
+- Les validations, points, niveaux, séries, bilans et sauvegardes existants sont conservés.
+
+Fichiers modifiés : app.js, index.html, service-worker.js.
+Fichier ajouté : premium-v17.css.
+
+Après publication, accepter la mise à jour proposée par l’application ou fermer et rouvrir l’application.

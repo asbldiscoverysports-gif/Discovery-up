@@ -1,0 +1,30 @@
+.pillar-setting{margin:15px 0;padding:14px;border-radius:18px;background:#f3f7f8}
+.pillar-setting label{margin:0 0 7px}
+.pillar-setting .goal-select{background:#fff}
+.pillar-setting p{margin:7px 0 0;color:var(--muted);font-size:12px;line-height:1.4}
+.habit-name.pillar-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.habit-name.pillar-copy b{font-size:14px;color:var(--navy)}
+.habit-name.pillar-copy small{font-size:12px;font-weight:600;color:var(--muted);line-height:1.3}
+.level-overlay{z-index:55;background:rgba(11,52,76,.72)}
+.level-modal{text-align:center;position:relative;overflow:hidden;border:2px solid var(--teal);background:radial-gradient(circle at 50% 24%,#e0fbf7,#fff 72%)}
+.level-visual{position:relative;width:190px;height:190px;margin:6px auto 12px;display:grid;place-items:center}
+.level-visual:before,.level-visual:after{content:"";position:absolute;inset:9px;border-radius:50%;border:4px solid rgba(85,206,197,.58);animation:level-ring 1.4s ease-out both}
+.level-visual:after{inset:0;border-color:rgba(255,133,122,.55);animation-delay:.22s}
+.level-visual img{position:relative;z-index:2;width:156px;height:156px;object-fit:contain;mix-blend-mode:multiply;animation:level-appear .7s cubic-bezier(.2,1.2,.3,1) both}
+.level-modal .mission-tag{display:block;margin-bottom:8px}
+.level-modal h2{font-size:29px;margin:0 0 10px}
+.level-modal p{margin:0 0 16px}
+.level-burst{position:absolute;inset:0;pointer-events:none}
+.level-burst i{position:absolute;left:50%;top:42%;width:8px;height:8px;border-radius:50%;background:var(--coral);animation:level-spark 1.25s ease-out both;animation-delay:calc(var(--n)*.035s)}
+.level-burst i:nth-child(3n){background:var(--teal)}
+.level-burst i:nth-child(3n+1){background:var(--yellow)}
+@keyframes level-ring{0%{opacity:0;transform:scale(.4)}45%{opacity:1}100%{opacity:0;transform:scale(1.3)}}
+@keyframes level-appear{from{opacity:0;transform:scale(.5) translateY(28px)}to{opacity:1;transform:none}}
+@keyframes level-spark{0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}25%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) scale(1)}}
+.reward-modal.compensation .reward-stage{height:180px}
+.reward-modal.compensation .reward-bag{left:50%;top:13px;transform:translateX(-50%);animation:compensation-bag 1.1s ease-out both}
+.reward-modal.compensation .reward-copy{animation-delay:.65s}
+.compensation-xp{position:absolute;z-index:6;left:50%;top:50%;font-size:38px;font-weight:950;color:var(--coral);text-shadow:0 2px 0 #fff;opacity:0;animation:compensation-pop .75s .42s cubic-bezier(.2,1.4,.3,1) forwards}
+@keyframes compensation-bag{0%{opacity:0;transform:translateX(-50%) scale(.55)}65%{opacity:1;transform:translateX(-50%) scale(1.05)}100%{opacity:1;transform:translateX(-50%) scale(.87)}}
+@keyframes compensation-pop{from{opacity:0;transform:translate(-50%,30px) scale(.4)}to{opacity:1;transform:translate(-50%,-35px) scale(1)}}
+@media(prefers-reduced-motion:reduce){.level-visual:before,.level-visual:after,.level-visual img,.level-burst i,.compensation-xp,.reward-modal.compensation .reward-bag{animation:none!important;opacity:1}.level-burst{display:none}.compensation-xp{transform:translate(-50%,-35px)}}
