@@ -1,4 +1,8 @@
-DISCOVERY UP PREMIUM V17
+DISCOVERY UP PREMIUM V18
+
+Nouveauté V18 : le parcours indique clairement « Mois 1 » à « Mois 10 ».
+Le texte précise que les mois avancent avec le temps et les niveaux avec les XP.
+Aucune règle ni donnée n’est modifiée.
 
 Contenu du ZIP : fichiers de l’application à placer directement à la racine du dépôt GitHub Pages.
 
