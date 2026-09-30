@@ -1,0 +1,17 @@
+DISCOVERY UP PREMIUM V19 — PULSE ANIMÉ À TOUS LES NIVEAUX
+
+Placez le contenu du ZIP directement à la racine du dépôt GitHub Pages,
+en remplaçant les fichiers existants. Il ne faut pas créer un sous-dossier.
+
+Les 12 illustrations originales de Pulse sont conservées. Une respiration
+très légère anime chacune d’elles. Les yeux ouverts clignent brièvement ;
+les poses déjà endormies ou faisant un clin d’œil gardent leur expression.
+Aucun bras supplémentaire ni bouton de démonstration n’est ajouté.
+Les étincelles de réussite déjà présentes dans l’application restent actives.
+
+La mise à jour V19 change uniquement la source des images de Pulse et le cache
+hors ligne. Les points, la série, les bilans et les sauvegardes sont conservés.
+Les animations respectent le réglage système de réduction du mouvement.
+
+Après publication, ouvrir Discovery UP et accepter la mise à jour proposée.
+En cas d’ancienne version en cache, fermer puis rouvrir l’application.
