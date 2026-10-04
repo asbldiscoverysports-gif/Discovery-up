@@ -1,0 +1,36 @@
+DISCOVERY UP PREMIUM V21 — FIT FOR RUN FINAL
+
+Le programme guidé utilise le document final FIT FOR RUN :
+- 12 semaines et 24 séances A/B, avec les intervalles et les tours du guide ;
+- les 19 illustrations du document, compressées et mises en cache hors ligne ;
+- les consignes finales et les trois variantes par mouvement ;
+- les 19 fiches consultables : étapes, repères, matériel, muscles sollicités ;
+- les conseils spécifiques à chaque séance et l'échauffement de deux minutes.
+
+Le bouton Pause a été corrigé. Fermer le minuteur conserve sa position pour
+reprendre. La confirmation compte une séance réalisée et valide Renforcement
+sans donner deux fois les points de mouvement du même jour. La structure des
+séances reste compatible avec le suivi V20. La progression habituelle, les
+réglages et les sauvegardes utilisent les mêmes clés que l'application actuelle.
+
+ESSAI SUR ORDINATEUR
+Décompressez ce ZIP et double-cliquez sur index.html. Cela ouvre une copie locale
+sans modifier le site publié. Dans Aujourd'hui, ouvrez FIT FOR RUN sous
+Renforcement, puis semaine 1, séance A. Vérifiez les images, les fiches, le
+minuteur, la pause/reprise et le compteur 1/24 après confirmation.
+Ce mode ne teste pas l'installation PWA ni la mise à jour du cache en ligne.
+
+PUBLICATION
+Sauvegardez votre progression dans l'application actuelle. Placez le contenu
+complet du ZIP à la racine du dépôt GitHub Pages, au même endroit que l'ancien
+index.html. Ne déposez pas le ZIP ni un dossier supplémentaire. Remplacez les
+fichiers et ajoutez le dossier assets/fit-for-run. Acceptez ensuite la mise à
+jour proposée dans l'application. Cette opération publie V21 pour les membres.
+
+VÉRIFICATIONS EFFECTUÉES
+Les 24 durées ont été recalculées et comparées au document. Les scénarios de
+logique du minuteur, de pause/reprise et de confirmation sans points en double
+ont été vérifiés avec une interface simulée. Toutes les ressources déclarées
+pour le mode hors ligne existent. La syntaxe des scripts a été vérifiée.
+L'affichage et les comportements propres aux navigateurs mobiles restent à
+vérifier sur appareil : ce paquet ne constitue pas une certification navigateur.
